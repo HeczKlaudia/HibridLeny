@@ -1,0 +1,52 @@
+{
+    "osztalylista": [
+    {
+        "SZFA": [
+            "tanulo1",
+            "tanulo2",
+            "tanulo3",
+            "tanulo4"
+        ]
+    },
+    {
+        "SZFB": [
+            "tanulo11",
+            "tanulo12",
+            "tanulo13",
+            "tanulo14"
+        ]
+    },
+    {
+        "SZFC": [
+            "tanulo21",
+            "tanulo22",
+            "tanulo23",
+            "tanulo24"
+        ]
+    },
+    {
+        "FKA": [
+            "tanulo31",
+            "tanulo32",
+            "tanulo33",
+            "tanulo34"
+        ]
+    },
+    {
+        "FKB": [
+            "tanulo41",
+            "tanulo42",
+            "tanulo43",
+            "tanulo44"
+        ]
+    },
+    {
+        "FKC": [
+            "tanulo51",
+            "tanulo52",
+            "tanulo53",
+            "tanulo54"
+        ]
+    }
+    ]
+}
