@@ -24,3 +24,7 @@ footer {
 header h1{
     text-align: center;
 }
+
+table, tr, td {
+    border: 1px solid black;
+}
