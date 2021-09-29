@@ -1,8 +1,11 @@
 const tombOsztaly=[];
 let hossz = 6;
+const allatok = [];
 
 $(function(){
     beolvasOsztaly();
+    beolvasAllatok();
+    
 });
 
 function beolvasAllatok() {
@@ -10,12 +13,15 @@ function beolvasAllatok() {
         {url: "adatok.json",
         success: function(result){
             //console.log(result);
-            result.allatlista.forEach((value)=>{
-                //console.log(value);
+            result.allatlista.forEach((value)=>{                 
+                allatok.push(value); 
+                //keveres();     
+                                
                     $("#tartalom").append("<p>"+value+"</p>"); 
-                });
+                    
+                }); console.log(allatok);
+                
         }
-
     })
 }
 
@@ -97,6 +103,8 @@ function osztalyKivalasztas() {
 }
 
 function keveres(){
-    beolvasAllatok();
+    allatok.sort(function (a, b) {
+        return Math.random() - 0.5;
+        });
 
 }
