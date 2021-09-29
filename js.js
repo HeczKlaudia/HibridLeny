@@ -5,6 +5,7 @@ const allatok = [];
 $(function(){
     beolvasOsztaly();
     beolvasAllatok();  
+    nyomtat();
 });
 
 function beolvasAllatok() {
@@ -44,7 +45,11 @@ function osztalyKivalasztas() {
     $("#tartalom").append("<table>");
     $("#tartalom").append("<tr>");
 
-    if(indexek == 1) {
+    for (let index = 0; index < tombOsztaly[indexek - 1].length; index++) {
+        $("#tartalom").append("<td>"+tombOsztaly[indexek - 1][index]+"</td>");
+        keveres();           
+    }
+    /* if(indexek == 1) {
         for (let index = 0; index < tombOsztaly[0].length; index++) {
             $("#tartalom").append("<td>"+tombOsztaly[0][index]+"</td>");
             keveres();           
@@ -79,11 +84,17 @@ function osztalyKivalasztas() {
             keveres();
         }
 
-    }
+    } */
     
     $("#tartalom").append("</tr>");
     $("#tartalom").append("</table>");
     
+}
+function nyomtat() {
+    $('#nyomtat').on('click', function () {
+    $('footer, form, header, #felvetel').css('display', 'none'); 
+    window.print(); 
+    });
 }
 
 function keveres(){
