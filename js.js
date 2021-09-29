@@ -1,5 +1,5 @@
-var tombOsztaly=[];
-var hossz = 6;
+const tombOsztaly=[];
+let hossz = 6;
 
 $(function(){
     beolvasOsztaly();
@@ -39,7 +39,7 @@ function beolvasOsztaly() {
 
 function osztalyKivalasztas() {
     $("#tartalom").empty();
-    let indexek = document.getElementById("kategoria").selectedIndex;
+    const indexek = document.getElementById("kategoria").selectedIndex;
 
     if(indexek == 1) {
         $("#tartalom").append("<table>");
