@@ -25,11 +25,16 @@ header h1{
     text-align: center;
 }
 
+
 table, tr, td {
     border: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+
 }
 
-td {
-    width: 25%;
-    text-align: center;
+td, tr {
+    width: 32%;
+    border-style: inset;
+    border-collapse: collapse;
 }
