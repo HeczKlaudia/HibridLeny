@@ -28,3 +28,8 @@ header h1{
 table, tr, td {
     border: 1px solid black;
 }
+
+td {
+    width: 25%;
+    text-align: center;
+}
